@@ -1,0 +1,31 @@
+# fullsend organization configuration
+# https://github.com/fullsend-ai/fullsend
+#
+# This file is managed by fullsend. Manual edits may be overwritten.
+version: "1"
+dispatch:
+  platform: github-actions
+defaults:
+  roles:
+    - fullsend
+    - triage
+    - coder
+    - review
+  max_implementation_retries: 2
+  auto_merge: false
+agents:
+  - role: fullsend
+    name: seaci-fullsend
+    slug: seaci-fullsend
+  - role: triage
+    name: seaci-triage
+    slug: seaci-triage
+  - role: coder
+    name: seaci-coder
+    slug: seaci-coder
+  - role: review
+    name: seaci-review
+    slug: seaci-review
+repos:
+  sandbox:
+    enabled: false
