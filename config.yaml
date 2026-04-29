@@ -28,4 +28,4 @@ agents:
     slug: seaci-review
 repos:
   sandbox:
-    enabled: false
+    enabled: true
